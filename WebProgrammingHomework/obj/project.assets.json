@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\WebProgrammingHomework\\WebProgrammingHomework\\WebProgrammingHomework.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\kemalguvenc\\WebProgrammingHomework\\WebProgrammingHomework\\WebProgrammingHomework.csproj",
       "projectName": "WebProgrammingHomework",
-      "projectPath": "C:\\Users\\Administrator\\Desktop\\WebProgrammingHomework\\WebProgrammingHomework\\WebProgrammingHomework.csproj",
+      "projectPath": "C:\\Users\\Administrator\\Desktop\\kemalguvenc\\WebProgrammingHomework\\WebProgrammingHomework\\WebProgrammingHomework.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrator\\Desktop\\WebProgrammingHomework\\WebProgrammingHomework\\obj\\",
+      "outputPath": "C:\\Users\\Administrator\\Desktop\\kemalguvenc\\WebProgrammingHomework\\WebProgrammingHomework\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
