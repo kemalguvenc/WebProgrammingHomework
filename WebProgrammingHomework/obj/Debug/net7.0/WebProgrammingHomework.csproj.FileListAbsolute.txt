@@ -282,3 +282,5 @@ C:\Users\Administrator\Desktop\WebProgrammingHomework\WebProgrammingHomework\obj
 C:\Users\Administrator\Desktop\WebProgrammingHomework\WebProgrammingHomework\obj\Debug\net7.0\WebProgrammingHomework.pdb
 C:\Users\Administrator\Desktop\WebProgrammingHomework\WebProgrammingHomework\obj\Debug\net7.0\WebProgrammingHomework.genruntimeconfig.cache
 C:\Users\Administrator\Desktop\WebProgrammingHomework\WebProgrammingHomework\obj\Debug\net7.0\ref\WebProgrammingHomework.dll
+C:\Users\Administrator\Desktop\WebProgrammingHomework\WebProgrammingHomework\bin\Debug\net7.0\Npgsql.dll
+C:\Users\Administrator\Desktop\WebProgrammingHomework\WebProgrammingHomework\bin\Debug\net7.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
