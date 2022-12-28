@@ -617,7 +617,7 @@ progress {
 }
 
     .blockquote-footer::before {
-        content: "ï¿½ï¿½";
+        content: "— ";
     }
 
 .img-fluid {
