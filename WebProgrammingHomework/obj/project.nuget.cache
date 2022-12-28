@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "H+OnD2e3cs2nTtNBLND+Unn4LtZYi+yEib1hQ2uqa4S1rftDL0lgVlokvLzeawB0V8xVKWfA/6lgJWNTxBum4Q==",
+  "dgSpecHash": "2zAE3Od7THS9ocY1EMAnlIsBGLIFa5ucwMVSQqXhB8z7wrN6eq0m/zpFo+39tUgCm+h3IMGljZMon8pwuvG3+g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Administrator\\Desktop\\kemalguvenc\\WebProgrammingHomework\\WebProgrammingHomework\\WebProgrammingHomework.csproj",
+  "projectFilePath": "C:\\Users\\Administrator\\Desktop\\WebProgrammingHomework\\WebProgrammingHomework\\WebProgrammingHomework.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
@@ -83,6 +83,8 @@
     "C:\\Users\\Administrator\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\npgsql\\7.0.1\\npgsql.7.0.1.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\7.0.1\\npgsql.entityframeworkcore.postgresql.7.0.1.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\nuget.common\\6.3.1\\nuget.common.6.3.1.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\nuget.configuration\\6.3.1\\nuget.configuration.6.3.1.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\nuget.dependencyresolver.core\\6.3.1\\nuget.dependencyresolver.core.6.3.1.nupkg.sha512",
