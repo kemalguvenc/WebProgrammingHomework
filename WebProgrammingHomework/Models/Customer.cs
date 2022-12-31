@@ -8,12 +8,12 @@ namespace WebProgrammingHomework.Models
         public int Id { get; set; }
 
         [Required(ErrorMessage = "Lütfen, kullanıcı adını giriniz!")]
-        [StringLength(20, ErrorMessage = "En fazla {1} karakter uzunluğunda olmalıdır."]
+        [StringLength(20, ErrorMessage = "En fazla {1} karakter uzunluğunda olmalıdır.")]
         [Display(Name = "Ad")]
         public String Name { get; set; }
 
         [Required(ErrorMessage = "Lütfen, kullanıcı soyadını giriniz!")]
-        [StringLength(20, ErrorMessage = "En fazla {1} karakter uzunluğunda olmalıdır."]
+        [StringLength(20, ErrorMessage = "En fazla {1} karakter uzunluğunda olmalıdır.")]
         [Display(Name = "Soyad")]
         public String Surname { get; set; }
 
