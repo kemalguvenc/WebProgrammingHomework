@@ -20,7 +20,7 @@ namespace WebProgrammingHomework.Models
         [Required(ErrorMessage = "Lütfen, e-postanızı giriniz!")]
         [StringLength(50, ErrorMessage = "En fazla {1} karakter uzunluğunda olmalıdır.", MinimumLength = 3)]
         [DataType(DataType.EmailAddress)]
-        [RegularExpression(@"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+.[A-Za-z]{2,4}")]
+        [RegularExpression(@"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+.[A-Za-z]{2,4}", ErrorMessage = "Lütfen, e-postanızı doğru giriniz!")]
         [Display(Name = "E-Posta")]
         public String SenderEmail { get; set; }
 

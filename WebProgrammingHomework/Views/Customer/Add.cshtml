@@ -1,0 +1,67 @@
+﻿@model WebProgrammingHomework.Models.Customer
+@{
+	ViewData["Title"] = "Kayıt Ol";
+}
+
+<section class="page-section" id="contact">
+	<div class="container">
+		<div class="text-center">
+			<h2 class="section-heading text-uppercase">Kayıt</h2>
+		</div>
+
+		@*<form id="contactForm" asp-controller="Customer" asp-action="Add" method="post">
+			<div class="row align-items-stretch mb-5">
+				<div class="col-md-6">
+					<div class="form-group">
+						<!-- Name input-->
+						<input asp-for="Name" class="form-control" placeholder="Adınızı giriniz" />
+						<span asp-validation-for="Name" class="text-danger"></span>
+					</div>
+					<div class="form-group">
+						<!-- Name input-->
+						<input asp-for="Surname" class="form-control" placeholder="Soyadınızı giriniz" />
+						<span asp-validation-for="Surname" class="text-danger"></span>
+					</div>
+					<div class="form-group">
+						<!-- Email address input-->
+						<input asp-for="Email" class="form-control" placeholder="E-Posta adresinizi giriniz" />
+						<span asp-validation-for="Email" class="text-danger"></span>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<!-- Password input-->
+						<input asp-for="Password" class="form-control" placeholder="Şifrenizi giriniz" />
+						<span asp-validation-for="Password" class="text-danger"></span>
+					</div>
+					<div class="form-group">
+						<!-- Password input-->
+						<input asp-for="Password" class="form-control" placeholder="Şifrenizi tekrar giriniz" />
+						<span asp-validation-for="Password" class="text-danger"></span>
+					</div>
+					<div class="form-group">
+						<!-- Adress input-->
+						<input asp-for="Adress" class="form-control" placeholder="Adresinizi giriniz" />
+						<span asp-validation-for="Adress" class="text-danger"></span>
+					</div>
+				</div>
+			</div>
+
+			@if (ViewBag.Warning == "Done")
+			{
+				<div class="text-center text-white mb-3">
+					<div class="fw-bolder">Mesajınız başarılır bir şekilde iletilmiştir!</div>
+				</div>
+			}
+			else if (ViewBag.Warning == "Failed")
+			{
+				<div class="text-center text-white mb-3">
+					<div class="fw-bolder">Mesajınız teknik bir aksaklık nedeniyle iletilememiştir!</div>
+				</div>
+			}
+
+			<!-- Submit Button-->
+			<div class="text-center"><input class="btn btn-primary btn-xl text-uppercase" id="submitButton" type="submit" value="Gönder" /></div>
+		</form>
+	</div>*@
+</section>

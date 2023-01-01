@@ -52,10 +52,6 @@
               "target": "Package",
               "version": "[7.0.1, )"
             },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[7.0.1, )"
-            },
             "Microsoft.EntityFrameworkCore.Tools": {
               "target": "Package",
               "version": "[7.0.1, )"

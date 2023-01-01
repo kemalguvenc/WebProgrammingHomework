@@ -1,0 +1,27 @@
+﻿@model IEnumerable<Hosting>
+@{
+	ViewData["Title"] = "Hosting";
+}
+
+<section class="page-section" style="padding:0px 0px 6rem 0px;">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4">
+				@foreach (var item in Model)
+				{
+					<h2>@Html.DisplayFor(modelItem => item.Name)</h2>
+					<h5 style="display: block;"><strong>@Html.DisplayFor(modelItem => item.Price) </strong><span>Aylık</span></h5>
+					<ul class="list">
+						<li>@Html.DisplayFor(modelItem => item.Disk) GB Disk</li>
+						<li>@Html.DisplayFor(modelItem => item.Traffic) GB Trafik</li>
+						<li>@Html.DisplayFor(modelItem => item.WebAdressNumber) adet web sitesi</li>
+						<li>@Html.DisplayFor(modelItem => item.hostingPanel)</li>
+					</ul>
+					<div class="bottom_sect">
+						@Html.ActionLink("Satın Al", "AddCart", "CartController", new{id=item.Id})
+					</div>
+				}
+			</div>
+		</div>
+	</div>
+</section>
