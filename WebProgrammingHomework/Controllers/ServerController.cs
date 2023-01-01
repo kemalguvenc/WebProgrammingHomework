@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Hosting.Server;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using WebProgrammingHomework.Data;
@@ -8,8 +9,11 @@ namespace WebProgrammingHomework.Controllers
 {
 	public class ServerController : Controller
 	{
-		static DbContextOptions<ApplicationDbContext> options = new DbContextOptions<ApplicationDbContext>();
-		ApplicationDbContext dbContext = new ApplicationDbContext(options);
+		ApplicationDbContext dbContext;
+		public ServerController(ApplicationDbContext dbContext)
+		{
+			this.dbContext = dbContext;
+		}
 
 		public IActionResult IndexServer()
 		{
@@ -49,7 +53,7 @@ namespace WebProgrammingHomework.Controllers
 				Server server = dbContext.Servers.FirstOrDefault(x => x.Id == Id);
 				if (server != null)
 				{
-					dbContext.Hostings.Remove(server);
+					dbContext.Servers.Remove(server);
 					dbContext.SaveChanges();
 					TempData["Warning"] = "Server başarılı bir şekilde silindi!";
 				}
@@ -81,7 +85,7 @@ namespace WebProgrammingHomework.Controllers
 
 		[HttpPost]
 		[ValidateAntiForgeryToken]
-		public IActionResult UpdateHosting(Hosting receivedHosting)
+		public IActionResult UpdateHosting(Server receivedHosting)
 		{
 			if (ModelState.IsValid)
 			{

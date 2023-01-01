@@ -7,8 +7,11 @@ namespace WebProgrammingHomework.Controllers
 {
 	public class ContactController : Controller
 	{
-		static DbContextOptions<ApplicationDbContext> options = new DbContextOptions<ApplicationDbContext>();
-		ApplicationDbContext dbContext = new ApplicationDbContext(options);
+		ApplicationDbContext dbContext;
+		public ContactController(ApplicationDbContext dbContext)
+		{
+			this.dbContext = dbContext;
+		}
 
 		public IActionResult Index()
 		{
