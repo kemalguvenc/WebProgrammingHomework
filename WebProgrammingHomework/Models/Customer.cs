@@ -3,10 +3,10 @@ using Microsoft.AspNetCore.Identity;
 
 namespace WebProgrammingHomework.Models
 {
-	public class Customer : IdentityUser
+	public class Customer
 	{
 		[Key]
-		public int Id;
+		public int Id { get; set; }
 
 		[Required(ErrorMessage = "Lütfen, adınızı giriniz!")]
 		[StringLength(20, ErrorMessage = "En fazla {1} karakter uzunluğunda olmalıdır.")]
@@ -38,7 +38,5 @@ namespace WebProgrammingHomework.Models
 		[StringLength(100, ErrorMessage = "En fazla {1} karakter uzunluğunda olmalıdır.", MinimumLength = 10)]
 		[Display(Name = "Adres")]
 		public String Adress { get; set; }
-
-		public Product? Cart { get; set; }
 	}
 }

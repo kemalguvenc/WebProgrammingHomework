@@ -14,11 +14,19 @@ namespace WebProgrammingHomework.Models
 
         [Required(ErrorMessage = "Lütfen ürünün tipini giriniz!")]
         [Display(Name = "Tip")]
-        public ProductType ProductType { get; set; }
+        public String ProductType { get; set; }
 
-		[Required(ErrorMessage = "Lütfen ürünün stokunu giriniz!")]
-		[Display(Name = "Stok")]
-		public uint Stock { get; set; }
+		[Required(ErrorMessage = "Lütfen, disk boyutunu giriniz!")]
+		[Display(Name = "Disk")]
+		public uint Disk { get; set; }
+
+		[Required(ErrorMessage = "Lütfen, bir sistem bilgisini giriniz!")]
+		[Display(Name = "Sistem")]
+		public String System { get; set; }
+
+		[Required(ErrorMessage = "Lütfen, ürünün adını giriniz!")]
+		[Display(Name = "Trafik")]
+		public uint Traffic { get; set; }
 
 		[Required(ErrorMessage = "Lütfen ürünün fiyatını giriniz!")]
         [Display(Name = "Fiyat")]

@@ -9,37 +9,89 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WebProgrammingHomework
 build_property.RootNamespace = WebProgrammingHomework
-build_property.ProjectDir = C:\Users\Administrator\Desktop\WebProgrammingHomework\WebProgrammingHomework\
+build_property.ProjectDir = C:\Users\Administrator\Desktop\kemalguvenc\WebProgrammingHomework\WebProgrammingHomework\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Administrator\Desktop\WebProgrammingHomework\WebProgrammingHomework
+build_property.MSBuildProjectDirectory = C:\Users\Administrator\Desktop\kemalguvenc\WebProgrammingHomework\WebProgrammingHomework
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Administrator/Desktop/WebProgrammingHomework/WebProgrammingHomework/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[C:/Users/Administrator/Desktop/kemalguvenc/WebProgrammingHomework/WebProgrammingHomework/Views/Contact/Contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxDb250YWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Administrator/Desktop/WebProgrammingHomework/WebProgrammingHomework/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[C:/Users/Administrator/Desktop/kemalguvenc/WebProgrammingHomework/WebProgrammingHomework/Views/Customer/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcQWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Administrator/Desktop/WebProgrammingHomework/WebProgrammingHomework/Views/Shared/Error.cshtml]
+[C:/Users/Administrator/Desktop/kemalguvenc/WebProgrammingHomework/WebProgrammingHomework/Views/Customer/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Administrator/Desktop/kemalguvenc/WebProgrammingHomework/WebProgrammingHomework/Views/Customer/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Administrator/Desktop/kemalguvenc/WebProgrammingHomework/WebProgrammingHomework/Views/Customer/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Administrator/Desktop/kemalguvenc/WebProgrammingHomework/WebProgrammingHomework/Views/Customer/Remove.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcUmVtb3ZlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Administrator/Desktop/kemalguvenc/WebProgrammingHomework/WebProgrammingHomework/Views/Home/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Administrator/Desktop/kemalguvenc/WebProgrammingHomework/WebProgrammingHomework/Views/Home/HomePage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIb21lUGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Administrator/Desktop/kemalguvenc/WebProgrammingHomework/WebProgrammingHomework/Views/Order/IndexOrder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcSW5kZXhPcmRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Administrator/Desktop/kemalguvenc/WebProgrammingHomework/WebProgrammingHomework/Views/Product/CreateProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxDcmVhdGVQcm9kdWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Administrator/Desktop/kemalguvenc/WebProgrammingHomework/WebProgrammingHomework/Views/Product/IndexHosting.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleEhvc3RpbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Administrator/Desktop/kemalguvenc/WebProgrammingHomework/WebProgrammingHomework/Views/Product/IndexProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleFByb2R1Y3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Administrator/Desktop/kemalguvenc/WebProgrammingHomework/WebProgrammingHomework/Views/Product/IndexServer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleFNlcnZlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Administrator/Desktop/kemalguvenc/WebProgrammingHomework/WebProgrammingHomework/Views/Product/UpdateProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxVcGRhdGVQcm9kdWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Administrator/Desktop/kemalguvenc/WebProgrammingHomework/WebProgrammingHomework/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Administrator/Desktop/WebProgrammingHomework/WebProgrammingHomework/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Administrator/Desktop/kemalguvenc/WebProgrammingHomework/WebProgrammingHomework/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Administrator/Desktop/kemalguvenc/WebProgrammingHomework/WebProgrammingHomework/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Administrator/Desktop/WebProgrammingHomework/WebProgrammingHomework/Views/_ViewImports.cshtml]
+[C:/Users/Administrator/Desktop/kemalguvenc/WebProgrammingHomework/WebProgrammingHomework/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Administrator/Desktop/WebProgrammingHomework/WebProgrammingHomework/Views/_ViewStart.cshtml]
+[C:/Users/Administrator/Desktop/kemalguvenc/WebProgrammingHomework/WebProgrammingHomework/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Administrator/Desktop/WebProgrammingHomework/WebProgrammingHomework/Views/Shared/_Layout.cshtml]
+[C:/Users/Administrator/Desktop/kemalguvenc/WebProgrammingHomework/WebProgrammingHomework/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-ap6e9j3a3i

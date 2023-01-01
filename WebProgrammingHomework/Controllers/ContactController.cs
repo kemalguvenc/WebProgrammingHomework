@@ -13,7 +13,7 @@ namespace WebProgrammingHomework.Controllers
 			this.dbContext = dbContext;
 		}
 
-		public IActionResult Index()
+		public IActionResult Contact()
 		{
 			return View();
 		}
@@ -22,7 +22,7 @@ namespace WebProgrammingHomework.Controllers
 		[ValidateAntiForgeryToken]
 		public IActionResult Contact(Message receivedMessage)
 		{
-			receivedMessage.SendingDate = DateTime.Now;
+			receivedMessage.SendingDate = DateTime.UtcNow;
 
 			if (ModelState.IsValid)
 			{

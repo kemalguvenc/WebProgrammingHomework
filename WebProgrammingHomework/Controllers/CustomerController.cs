@@ -23,12 +23,12 @@ namespace WebProgrammingHomework.Controllers
 			{
 				//_context.Students.Add(student);
 				//_context.SaveChanges();
-				ViewBag.Warning = "Done";
+				TempData["Warning"] = "Done";
 				return View();
 			}
 			else
 			{
-				ViewBag.Warning = "Failed";
+				TempData["Warning"] = "Failed";
 				return View();
 			}
 		}

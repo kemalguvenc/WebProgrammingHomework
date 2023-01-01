@@ -18,27 +18,23 @@ namespace WebProgrammingHomework.Controllers
 			return View(dbContext.Orders);
 		}
 
-		public IActionResult IndexOrderForCustomer(int? customerId)
+		public IActionResult IndexOrder(int? customerId) //For Customer
 		{
 			if (customerId is not null)
 			{
-				Order order = dbContext.Orders.FirstOrDefault(x => x.Id == customerId);
-				if (order != null)
-				{
-					dbContext.Orders.Remove(order);
-					dbContext.SaveChanges();
-					TempData["Warning"] = "Sipariş başarılı bir şekilde silindi!";
-				}
+				List<Order> orders = dbContext.Orders.Where(x => x.Id == customerId).ToList();
+				if (orders.Count != 0)
+					return View(orders);
 				else
 					TempData["Warning"] = "Sipariş bulunamadı!";
 			}
 			else
 				TempData["Warning"] = "Sipariş gönderilmedi!";
 
-			return RedirectToAction("Index", "OrderController");
+			return RedirectToAction("IndexOrder", "Order");
 		}
-
-		public IActionResult AddOrder(Order receivedOrder)
+		/*
+		public IActionResult AddOrder(int? productId)
 		{
 			if (ModelState.IsValid)
 			{
@@ -46,11 +42,11 @@ namespace WebProgrammingHomework.Controllers
 				Product product;
 				foreach (var item in receivedOrder.Products)
 				{
-					if (item.ProductType == ProductType.Server)
+					if (item.ProductType == "Hosting")
 					{
 						product = dbContext.Hostings.FirstOrDefault(x => x.Id == item.Id);
 					}
-					if (item.ProductType == ProductType.Hosting)
+					if (item.ProductType == "Server")
 					{
 
 					}
@@ -63,9 +59,10 @@ namespace WebProgrammingHomework.Controllers
 				TempData["Warning"] = "Sipraişiniz oluşturulamadı!";
 			}
 			receivedOrder.Buyer.Cart = null;
-			return RedirectToAction("IndexCart", "CartController"); // Müşteriye gidecek
+			return RedirectToAction("IndexCart", "Cart"); // Müşteriye gidecek
 		}
-		
+		*/
+		/*
 		public IActionResult RemoveOrder(int? Id)
 		{
 			if (Id is not null)
@@ -83,7 +80,8 @@ namespace WebProgrammingHomework.Controllers
 			else
 				TempData["Warning"] = "Sipariş gönderilmedi!";
 
-			return RedirectToAction("Index", "OrderController");
+			return RedirectToAction("Index", "Order");
 		}
+		*/
 	}
 }

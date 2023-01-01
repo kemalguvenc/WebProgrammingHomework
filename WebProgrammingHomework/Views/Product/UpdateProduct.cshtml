@@ -1,0 +1,56 @@
+﻿@model Product
+@{
+	ViewData["Title"] = "Ürün Güncelleme";
+}
+
+<section class="page-section" id="contact">
+	<div class="container">
+		<div class="text-center">
+			<h2 class="section-heading text-uppercase">Ürün Güncelleme</h2>
+		</div>
+
+		<form id="contactForm" asp-controller="Product" asp-action="UpdateProduct" method="post">
+			<div class="row align-items-stretch mb-5">
+				<div class="col-md-6">
+					<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+					<input type="hidden" asp-for="Id" />
+					<div class="form-group">
+						<input asp-for="Name" class="form-control" placeholder="Ürünün adını giriniz." />
+						<span asp-validation-for="Name" class="text-danger"></span>
+					</div>
+					<div class="form-group">
+						<input asp-for="ProductType" class="form-control" placeholder="Ürün tipini giriniz." />
+						<span asp-validation-for="ProductType" class="text-danger"></span>
+					</div>
+					<div class="form-group">
+						<input asp-for="System" class="form-control" placeholder="Sistembilgisini giriniz." />
+						<span asp-validation-for="System" class="text-danger"></span>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<input asp-for="Disk" class="form-control" placeholder="Disk miktarını giriniz." />
+						<span asp-validation-for="Disk" class="text-danger"></span>
+					</div><div class="form-group">
+						<input asp-for="Traffic" class="form-control" placeholder="Trafik miktarını giriniz." />
+						<span asp-validation-for="Traffic" class="text-danger"></span>
+					</div>
+					<div class="form-group">
+						<input asp-for="Price" class="form-control" placeholder="Fiyatı giriniz." />
+						<span asp-validation-for="Price" class="text-danger"></span>
+					</div>
+				</div>
+
+			</div>
+
+			@if (TempData["Warning"] != null)
+			{
+				<div class="text-center text-white mb-3">
+					<div class="fw-bolder">TempData.["Warning"]</div>
+				</div>
+			}
+
+			<div class="text-center"><input class="btn btn-primary btn-xl text-uppercase" id="submitButton" type="submit" value="Ürün'ü Güncelle" /></div>
+		</form>
+	</div>
+</section>

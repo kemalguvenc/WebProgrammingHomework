@@ -1,0 +1,47 @@
+﻿@model IEnumerable<Product>
+@{
+	ViewData["Title"] = "Ürünler";
+}
+
+<h3>Ürünler</h3>
+
+@if (TempData["Warning"] is not null)
+{
+	<div class="text-center text-white mb-3">
+		<div class="fw-bolder">@TempData["Warning"]</div>
+	</div>
+}
+
+@Html.ActionLink("Ürün Ekle", "AddProduct", "Product")
+
+<table style="width:100%;">
+	<thead>
+		<tr style="border-bottom: 3px solid #000;">
+			<th>@Html.DisplayNameFor(model => model.Id)</th>
+			<th>@Html.DisplayNameFor(model => model.Name)</th>
+			<th>@Html.DisplayNameFor(model => model.ProductType)</th>
+			<th>@Html.DisplayNameFor(model => model.Disk)</th>
+			<th>@Html.DisplayNameFor(model => model.Traffic)</th>
+			<th>@Html.DisplayNameFor(model => model.System)</th>
+			<th>@Html.DisplayNameFor(model => model.Price)</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var item in Model)
+		{
+			<tr style="border-bottom: 1px solid #ddd;">
+				<td>@Html.DisplayFor(modelItem => item.Id)</td>
+				<td>@Html.DisplayFor(modelItem => item.Name)</td>
+				<td>@Html.DisplayFor(modelItem => item.ProductType)</td>
+				<td>@Html.DisplayFor(modelItem => item.Disk)</td>
+				<td>@Html.DisplayFor(modelItem => item.Traffic)</td>
+				<td>@Html.DisplayFor(modelItem => item.System)</td>
+				<td>@Html.DisplayFor(modelItem => item.Price)</td>
+				<td>
+					@Html.ActionLink("Ürünü Sil", "RemoveProduct", "Product", new{id=item.Id})
+					@Html.ActionLink("Ürünü Güncelle", "UpdateProduct", "Product", new{id=item.Id})
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>

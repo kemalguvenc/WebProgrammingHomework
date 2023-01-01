@@ -47,13 +47,13 @@
 				</div>
 			</div>
 
-			@if (ViewBag.Warning == "Done")
+		@if (TempData["Warning"] == "Done")
 			{
 				<div class="text-center text-white mb-3">
 					<div class="fw-bolder">Mesajınız başarılır bir şekilde iletilmiştir!</div>
 				</div>
 			}
-			else if (ViewBag.Warning == "Failed")
+		else if (TempData["Warning"] == "Failed")
 			{
 				<div class="text-center text-white mb-3">
 					<div class="fw-bolder">Mesajınız teknik bir aksaklık nedeniyle iletilememiştir!</div>
@@ -62,6 +62,6 @@
 
 			<!-- Submit Button-->
 			<div class="text-center"><input class="btn btn-primary btn-xl text-uppercase" id="submitButton" type="submit" value="Gönder" /></div>
-		</form>
-	</div>*@
+		</form>*@
+	</div>
 </section>

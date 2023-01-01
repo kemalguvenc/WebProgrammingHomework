@@ -9,7 +9,7 @@ namespace WebProgrammingHomework.Models
 
         public Customer Buyer { get; set; }
 
-        public Product[] Products { get; set; }
+        public Product BuyedProduct { get; set; }
 
         [Display(Name = "Kredi Kartı")]
         [DataType(DataType.CreditCard)]

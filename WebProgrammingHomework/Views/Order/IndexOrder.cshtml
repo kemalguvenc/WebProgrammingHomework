@@ -5,7 +5,7 @@
 
 <h3>Siparişler</h3>
 
-@if (ViewBag.Warning != null)
+@if (TempData["Warning"] is not null)
 {
 	<div class="text-center text-white mb-3">
 		<div class="fw-bolder">@TempData["Warning"]</div>
@@ -26,8 +26,8 @@
 				<td>@Html.DisplayFor(modelItem => item.Buyer.Name)</td>
 				<td>@Html.DisplayFor(modelItem => item.ShoppingDate)</td>
 				<td>
-					@Html.ActionLink("Sipariş Bilgisi", "DetailsOrder", "OrderController", new{id=item.Id})
-					@Html.ActionLink("Siparişi Sil", "RemoveOrder", "OrderController", new{id=item.Id})
+					@Html.ActionLink("Sipariş Bilgisi", "DetailsOrder", "Order", new{id=item.Id})
+					@Html.ActionLink("Siparişi Sil", "RemoveOrder", "Order", new{id=item.Id})
 				</td>
 			</tr>
 		}
