@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using System.Data;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WebProgrammingHomework.Data;
 using WebProgrammingHomework.Models;
@@ -13,11 +15,13 @@ namespace WebProgrammingHomework.Controllers
 			this.dbContext = dbContext;
 		}
 
+		[Authorize(Roles = "Admin")]
 		public IActionResult IndexOrder()
 		{
 			return View(dbContext.Orders);
 		}
 
+		[Authorize(Roles = "Customer")]
 		public IActionResult IndexOrder(int? customerId) //For Customer
 		{
 			if (customerId is not null)
@@ -34,6 +38,7 @@ namespace WebProgrammingHomework.Controllers
 			return RedirectToAction("IndexOrder", "Order");
 		}
 		/*
+		[Authorize(Roles = "Customer")]
 		public IActionResult AddOrder(int? productId)
 		{
 			if (ModelState.IsValid)
@@ -60,28 +65,6 @@ namespace WebProgrammingHomework.Controllers
 			}
 			receivedOrder.Buyer.Cart = null;
 			return RedirectToAction("IndexCart", "Cart"); // Müşteriye gidecek
-		}
-		*/
-		/*
-		public IActionResult RemoveOrder(int? Id)
-		{
-			if (Id is not null)
-			{
-				Order order = dbContext.Orders.FirstOrDefault(x => x.Id == Id);
-				if (order != null)
-				{
-					dbContext.Orders.Remove(order);
-					dbContext.SaveChanges();
-					TempData["Warning"] = "Sipariş başarılı bir şekilde silindi!";
-				}
-				else
-					TempData["Warning"] = "Sipariş bulunamadı!";
-			}
-			else
-				TempData["Warning"] = "Sipariş gönderilmedi!";
-
-			return RedirectToAction("Index", "Order");
-		}
-		*/
+		}*/
 	}
 }

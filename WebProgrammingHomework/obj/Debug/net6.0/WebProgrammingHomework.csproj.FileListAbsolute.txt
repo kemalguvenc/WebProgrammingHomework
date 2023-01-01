@@ -58,3 +58,4 @@ C:\Users\Administrator\Desktop\kemalguvenc\WebProgrammingHomework\WebProgramming
 C:\Users\Administrator\Desktop\kemalguvenc\WebProgrammingHomework\WebProgrammingHomework\obj\Debug\net6.0\WebProgrammingHomework.pdb
 C:\Users\Administrator\Desktop\kemalguvenc\WebProgrammingHomework\WebProgrammingHomework\obj\Debug\net6.0\WebProgrammingHomework.genruntimeconfig.cache
 C:\Users\Administrator\Desktop\kemalguvenc\WebProgrammingHomework\WebProgrammingHomework\obj\Debug\net6.0\ref\WebProgrammingHomework.dll
+C:\Users\Administrator\Desktop\kemalguvenc\WebProgrammingHomework\WebProgrammingHomework\bin\Debug\net6.0\Newtonsoft.Json.dll

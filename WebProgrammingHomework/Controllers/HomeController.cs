@@ -1,9 +1,11 @@
 ﻿using System.Diagnostics;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using WebProgrammingHomework.Models;
 
 namespace WebProgrammingHomework.Controllers
 {
+    [AllowAnonymous]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -18,6 +20,7 @@ namespace WebProgrammingHomework.Controllers
             return View();
         }
 
+        [Authorize(Roles="Customer")]
         public IActionResult About()
         {
             return View();

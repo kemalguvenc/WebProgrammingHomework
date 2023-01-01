@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using System.Data;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using WebProgrammingHomework.Data;
@@ -14,27 +16,32 @@ namespace WebProgrammingHomework.Controllers
 			this.dbContext = dbContext;
 		}
 
+		[Authorize(Roles = "Admin")]
 		public IActionResult IndexProduct()
 		{
 			return View(dbContext.Products);
 		}
 
+		[AllowAnonymous]
 		public IActionResult IndexHosting()
 		{
 			return View(dbContext.Products.Where(x => x.ProductType == "Hosting"));
 		}
 
+		[AllowAnonymous]
 		public IActionResult IndexServer()
 		{
 			return View(dbContext.Products.Where(x => x.ProductType == "Server"));
 		}
 
+		[Authorize(Roles = "Admin")]
 		[HttpGet]
 		public IActionResult CreateProduct()
 		{
 			return View();
 		}
 
+		[Authorize(Roles = "Admin")]
 		[HttpPost]
 		[ValidateAntiForgeryToken]
 		public IActionResult CreateProduct(Product receivedProduct)
@@ -53,6 +60,7 @@ namespace WebProgrammingHomework.Controllers
 			}
 		}
 
+		[Authorize(Roles = "Admin")]
 		public IActionResult RemoveProduct(int? Id)
 		{
 			if (Id is not null)
@@ -73,6 +81,7 @@ namespace WebProgrammingHomework.Controllers
 			return RedirectToAction("IndexProduct", "Product");
 		}
 
+		[Authorize(Roles = "Admin")]
 		[HttpGet]
 		public IActionResult UpdateProduct(int? Id)
 		{
@@ -90,6 +99,7 @@ namespace WebProgrammingHomework.Controllers
 			return View();
 		}
 
+		[Authorize(Roles = "Admin")]
 		[HttpPost]
 		[ValidateAntiForgeryToken]
 		public IActionResult UpdateProduct(Product receivedProduct)

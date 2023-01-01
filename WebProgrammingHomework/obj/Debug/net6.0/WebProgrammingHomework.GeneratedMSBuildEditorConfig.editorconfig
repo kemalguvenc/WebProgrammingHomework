@@ -16,16 +16,20 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Administrator\Desktop\kemalguvenc\WebProgrammingHomework\WebProgrammingHomework
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Administrator/Desktop/kemalguvenc/WebProgrammingHomework/WebProgrammingHomework/Views/Admin/AdminLogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRtaW5Mb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Administrator/Desktop/kemalguvenc/WebProgrammingHomework/WebProgrammingHomework/Views/Admin/AdminPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRtaW5QYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Administrator/Desktop/kemalguvenc/WebProgrammingHomework/WebProgrammingHomework/Views/Contact/Contact.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxDb250YWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Administrator/Desktop/kemalguvenc/WebProgrammingHomework/WebProgrammingHomework/Views/Customer/Add.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcQWRkLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Administrator/Desktop/kemalguvenc/WebProgrammingHomework/WebProgrammingHomework/Views/Customer/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcRGV0YWlscy5jc2h0bWw=
+[C:/Users/Administrator/Desktop/kemalguvenc/WebProgrammingHomework/WebProgrammingHomework/Views/Customer/CreateCustomer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcQ3JlYXRlQ3VzdG9tZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Administrator/Desktop/kemalguvenc/WebProgrammingHomework/WebProgrammingHomework/Views/Customer/Edit.cshtml]
@@ -36,16 +40,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Administrator/Desktop/kemalguvenc/WebProgrammingHomework/WebProgrammingHomework/Views/Customer/Remove.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcUmVtb3ZlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/Administrator/Desktop/kemalguvenc/WebProgrammingHomework/WebProgrammingHomework/Views/Home/About.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Administrator/Desktop/kemalguvenc/WebProgrammingHomework/WebProgrammingHomework/Views/Home/HomePage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIb21lUGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Administrator/Desktop/kemalguvenc/WebProgrammingHomework/WebProgrammingHomework/Views/Login/LoginPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW5QYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Administrator/Desktop/kemalguvenc/WebProgrammingHomework/WebProgrammingHomework/Views/Login/MemberPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTWVtYmVyUGFnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Administrator/Desktop/kemalguvenc/WebProgrammingHomework/WebProgrammingHomework/Views/Order/IndexOrder.cshtml]

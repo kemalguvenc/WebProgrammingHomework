@@ -1,0 +1,34 @@
+﻿@model Admin
+@{
+	ViewData["Title"] = "Admin Girişi";
+}
+
+<section class="page-section" id="contact">
+	<div class="container">
+		<div class="text-center">
+			<h2 class="section-heading text-uppercase">Admin Girişi</h2>
+		</div>
+
+		<form id="contactForm" asp-controller="Admin" asp-action="AdminLogin" method="post">
+			<div class="row align-items-stretch mb-5">
+				<div class="form-group">
+					<input asp-for="Email" class="form-control" placeholder="E-Posta adresini giriniz." />
+					<span asp-validation-for="Email" class="text-danger"></span>
+				</div>
+				<div class="form-group">
+					<input asp-for="Password" class="form-control" placeholder="Şifreyi giriniz." />
+					<span asp-validation-for="Password" class="text-danger"></span>
+				</div>
+			</div>
+
+			@if (TempData["Warning"] != null)
+			{
+				<div class="text-center text-white mb-3">
+					<div class="fw-bolder">TempData.["Warning"]</div>
+				</div>
+			}
+
+			<div class="text-center"><input class="btn btn-primary btn-xl text-uppercase" id="submitButton" type="submit" value="Giriş" /></div>
+		</form>
+	</div>
+</section>

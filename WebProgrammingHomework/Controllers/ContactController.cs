@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WebProgrammingHomework.Data;
 using WebProgrammingHomework.Models;
 
 namespace WebProgrammingHomework.Controllers
 {
+	[AllowAnonymous]
 	public class ContactController : Controller
 	{
 		ApplicationDbContext dbContext;
@@ -28,7 +30,7 @@ namespace WebProgrammingHomework.Controllers
 			{
 				dbContext.Messages.Add(receivedMessage);
 				dbContext.SaveChanges();
-				TempData["Warning"] = "Mesajınız başarılır bir şekilde iletilmiştir!";
+				TempData["Warning"] = "Mesajınız başarılı bir şekilde iletilmiştir!";
 			}
 			else
 			{

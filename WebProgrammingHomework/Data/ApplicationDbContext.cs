@@ -9,6 +9,7 @@ namespace WebProgrammingHomework.Data
 		public DbSet<Order> Orders { get; set; }
 		public DbSet<Message> Messages { get; set; }
 		public DbSet<Customer> Customers { get; set; }
+		public DbSet<Admin> Admins { get; set; }
 
 		public ApplicationDbContext(DbContextOptions options)
 				: base(options)

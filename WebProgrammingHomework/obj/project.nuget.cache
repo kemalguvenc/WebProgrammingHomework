@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "F1cgcVz90SNwO/IbDF/+FECHKLCKapV42VU5a316Wd1iN92XicoCWzzaY2MJTUGg+XCOJBPxWdmNcYxSS2gHPw==",
+  "dgSpecHash": "S2p/fycSVWDkW6HO5CpzW+j2Q3ihaOqLLT/EwV2oF70rRBwnxfRs1Ose10UEHQUZc24EfBw4jMOl1UTvpqyRhw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Administrator\\Desktop\\kemalguvenc\\WebProgrammingHomework\\WebProgrammingHomework\\WebProgrammingHomework.csproj",
   "expectedPackageFiles": [
@@ -28,6 +28,7 @@
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\microsoft.extensions.options.7.0.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\npgsql\\7.0.1\\npgsql.7.0.1.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\7.0.1\\npgsql.entityframeworkcore.postgresql.7.0.1.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
