@@ -16,11 +16,11 @@ namespace WebProgrammingHomework.Models
         [Display(Name = "Tip")]
         public ProductType ProductType { get; set; }
 
-		[Required(ErrorMessage = "Lütfen ürünün stokunu giriniz!")]
-		[Display(Name = "Stok")]
-		public uint Stock { get; set; }
+        [Required(ErrorMessage = "Lütfen ürünün stokunu giriniz!")]
+        [Display(Name = "Stok")]
+        public uint Stock { get; set; }
 
-		[Required(ErrorMessage = "Lütfen ürünün fiyatını giriniz!")]
+        [Required(ErrorMessage = "Lütfen ürünün fiyatını giriniz!")]
         [Display(Name = "Fiyat")]
         [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:c}")]
         [DataType(DataType.Currency)]
